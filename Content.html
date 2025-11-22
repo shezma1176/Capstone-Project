@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(85, 49, 67);
+        }
+
+        .topnav a {
+            float: left;
+            color: #ffed66;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: rgb(255, 129, 160);
+        }
+
+        .topnav a.active {
+            background-color: rgb(255, 140, 140);
+            color: black;
+        }
+
+        .content {
+            background-color: hotpink;
+            color: bisque;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size: medium;
+            padding: 60px 20px;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-decoration: overline underline;
+        }
+
+        .content h5 {
+            margin: 5px 0;
+            font-size: 20px;
+
+        }
+
+        .ping3 {
+            position: relative;
+            opacity: 0.7;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: url('./Shhhhh.jpg');
+            min-height: 500px;
+        }
+
+        .ptext {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: lightpink;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            text-decoration: underline dotted cadetblue;
+        }
+
+        .ptext .border {
+            background-color: pink;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .ptext.border.trans {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="./Content.html" class="active">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./Contactus.html">Contact Us</a>
+    </div>
+
+    <div class="content">
+        <div>
+            <h1>Beauty Hub</h1>
+            <h5>A Unique Cosmetics Brand</h5>
+            <h5>A brand Trustworthy for every women</h5>
+        </div>
+    </div>
+
+    <div class="ping3">
+        <div class="ptext">
+            <span class="border trans">We make sure to make the perfect products for every women.</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

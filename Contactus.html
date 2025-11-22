@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Conract Us</title>
     <style>
         body {
             margin: 0;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .topnav {
             overflow: hidden;
-            background-color: #56092e;
+            background-color: rgb(85, 49, 67);
         }
 
         .topnav a {
             float: left;
-            color: #54e8ff;
+            color: #ffed66;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -26,28 +26,115 @@
         }
 
         .topnav a:hover {
-            background-color: #48fffc;
-            color: rgb(70, 2, 34);
+            background-color: #ddd;
+            color: rgb(255, 129, 160);
         }
 
         .topnav a.active {
-            background-color: #91ffe4;
-            color: rgb(70, 2, 34);
+            background-color: rgb(255, 140, 140);
+            color: black;
+        }
+        .contact-section {
+            background: lightpink;
+            padding: 50px 20px;
+            text-align: center;
+            color: rgb(85, 49, 67);
+        }
+
+        .contact-section h1 {
+            font-size: 40px;
+            color: bisque;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: rgb(85, 49, 67);
+        }
+
+        .contact-box {
+            background: hotpink;
+            padding: 25px;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 140, 140, 0.4);
+        }
+
+        .contact-box label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            color: rgb(85, 49, 67);
+            font-weight: bold;
+        }
+
+        .contact-box input,
+        .contact-box textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ffed66;
+            border-radius: 8px;
+            background: #fff8f8;
+            font-size: 16px;
+            resize: none;
+            outline: none;
+        }
+
+        .contact-box input:focus,
+        .contact-box textarea:focus {
+            border-color: rgb(255, 140, 140);
+            box-shadow: 0 0 8px rgba(255, 140, 140, 0.5);
+        }
+
+        .contact-button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background: pink;
+            color: lightgoldenrodyellow;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-button:hover {
+            background: rgb(255, 140, 140);
+            color: #fffed6;
+            transform: scale(1.05);
         }
     </style>
 </head>
 
 <body>
     <div class="topnav">
-        <a href="./MoreNavbar.html">Home</a>
+        <a href="./Content.html">Home</a>
         <a href="./aboutus.html">About Us</a>
-        <a href="./Menu.html">Menu</a>
         <a href="./Contactus.html" class="active">Contact Us</a>
     </div>
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Whether it’s a question, feedback, or a beauty concern, our team is here to help.
+        </p>
 
-    <img src="Emma.webp" alt="Emma" height="400px" width="400px">
-    <p>Name: Emma</p>
-    <p>Phone Number: 12345678900</p>
+        <div class="contact-box">
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+
+                <button class="contact-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
 
 </body>
 
