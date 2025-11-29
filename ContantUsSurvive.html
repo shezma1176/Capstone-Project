@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        .contact-section {
+            background: black;
+            padding: 50px 20px;
+            text-align: center;
+            color: rgb(85, 49, 67);
+        }
+
+        .contact-section h1 {
+            font-size: 40px;
+            color: bisque;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color:#ddd;
+        }
+
+        .contact-box {
+            background:black;
+            padding: 25px;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 140, 140, 0.4);
+        }
+
+        .contact-box label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            color: darkgoldenrod;
+            font-weight: bold;
+        }
+
+        .contact-box input,
+        .contact-box textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ffed66;
+            border-radius: 8px;
+            background: #fff8f8;
+            font-size: 16px;
+            resize: none;
+            outline: none;
+        }
+
+        .contact-box input:focus,
+        .contact-box textarea:focus {
+            border-color: #ffe066;
+            box-shadow: grey;
+        }
+
+        .contact-button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background: darkslategray;
+            color:#1affa3;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-button:hover {
+            background: black;
+            color: #fffed4;
+            transform: scale(1.05);
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #1affa3;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #ffe066;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="./website.html">Natutral Disasters</a>
+        <a href="./Websitehowtosurvive.html">How To Survive</a>
+        <a href="./ContantUsSurvive.html" class="active">Contact Us</a>
+    </div>
+
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <p>We're going to try our best to provide you advices and safety during a Natural Disaster. Whatever it is, it's
+            our duty to help you.
+        </p>
+
+        <div class="contact-box">
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+
+                <button class="contact-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
