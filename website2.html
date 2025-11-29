@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #1affa3;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #ffe066;
+            color: black;
+        }
+
+        .Slide {
+            padding-left: 25%;
+        }
+
+        .footer {
+
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: lightgoldenrodyellow;
+            text-align: center;
+        }
+
+        .ping3 {
+            position: relative;
+            opacity: 0.7;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: url('./Pizza\ being\ sliced.webp');
+            min-height: 500px;
+        }
+
+        .intro h1 {
+
+            color: #ffe066;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .intro p {
+            color: aquamarine;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: bisque;
+            text-align: center;
+            text-decoration: overline underline double
+        }
+
+        .content h3 {
+            color: burlywood;
+            text-decoration: underline overline darkgoldenrod;
+            text-align: center;
+        }
+
+        .content p {
+            color: azure;
+        }
+
+        .content small {
+            color: azure;
+            text-align: center;
+        }
+
+        .Parent {
+            color: bisque;
+            display: flex;
+            justify-content: space-around
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="./website2.html" class="active">Home</a>
+        <a href="">About US</a>
+        <a href="">Contact Us</a>
+    </div>
+
+    <div class="ping3">
+        <div class="ptext">
+            <span class="border trans">Pizza</span>
+        </div>
+    </div>
+
+    <div class="intro">
+        <h1>Pizza</h1>
+        <p>Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened
+            wheat-based dough topped with tomatoes, cheese and various other ingredients such as anchovies, mushrooms,
+            olives, pineapple, meat etc. which is baked at a high temperature, traditionally in a wood-fired oven. A
+            small pizza is sometimes called a pizzetta. A person who makes pizza is known as pizzaiolo</p>
+    </div>
+
+    <section class="Slide">
+        <img class="mySlides" src="Margherita-Pizza-020-800x1000.jpg" alt="" height="700px" width="700px">
+        <img class="mySlides" src="cheeseball Pizza.jpg" alt="" height="700px" width="700px">
+        <img class="mySlides" src="thumbnail-Smoked-Pepperoni-Pizza-scaled.jpg" alt="" height="700px" width="700px">
+
+
+    </section>
+
+    <div class="content">
+        <h2>The types of pizza</h2>
+        <p class="small"><i>There are a lot of various flavours of pizza. But some of the most famous ones are:</i></p>
+
+        <h3>Pepperoni Pizza</h3>
+        <p>Pepperoni pizza is a classic American favorite featuring a crispy or chewy crust topped with tangy tomato
+            sauce, gooey melted mozzarella cheese, and slices of spicy, savory pepperoni—a cured sausage made from beef
+            and pork. As it bakes, the pepperoni crisps up and curls into little cups, adding a smoky kick to every
+            bite. It's simple, satisfying, and loved for its bold flavor and comforting texture.</p>
+        <h3>Cheese Pizza</h3>
+        <p>Cheese pizza is the ultimate comfort food—simple, timeless, and universally loved. It features a golden,
+            chewy crust topped with tangy tomato sauce and a generous layer of melted mozzarella cheese. The creamy
+            richness of the cheese pairs perfectly with the bright acidity of the sauce, creating a mouthwatering
+            balance of flavors. Whether it's a thin New York slice or a deep-dish Chicago pie, cheese pizza is the go-to
+            base for countless variations and a favorite for purists who love pizza in its most classic form.</p>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="Parent">
+            <div>
+                <p>House - 20, Road - 10, Number - 123456</p>
+                <p>Location - In North Dhaka</p>
+                <p>Contact - +88088012132423645</p>
+            </div>
+        </div>
+        <p>@Copy all rights reserved by Osamu Dazai</p>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < x.length; i++) {
+
+                x[i].style.display = "none";
+            }
+
+            myIndex++;
+
+            if (myIndex > x.length) {
+
+                myIndex = 1;
+            }
+
+            x[myIndex - 1].style.display = "Block";
+            setTimeout(carousel, 3000)
+        }
+    </script>
+</body>
+
+</html>
